@@ -7,83 +7,21 @@
 		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
 	</head>
 	<body>
-		<section id="todoapp">
+          <section id="todoapp"></section>
 
-			<div>
-				<header id="header">
-					<h1>todos</h1>
-					<input id="new-todo" placeholder="What needs to be done?">
-				</header>
-				<section id="main">
-					<input id="toggle-all" type="checkbox">
-					<ul id="todo-list">
+          <footer id="info">
+            <p>Double-click to edit a todo</p>
+            <p>Created by <a href="http://github.com/petehunt/">petehunt</a></p>
+            <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+          </footer>
 
-						<li class="completed">
-							<div class="view">
-								<input class="toggle" type="checkbox" checked="true">
-								<label>Completed Item</label>
-								<button class="destroy"></button>
-							</div>
-							<input class="edit" value="">
-						</li>
+          <script src="node_modules/todomvc-common/base.js"></script>
+          <script src="node_modules/react/dist/react-with-addons.js"></script>
+          <script src="node_modules/react/dist/JSXTransformer.js"></script>
+          <script src="node_modules/director/build/director.js"></script>
+          <script src="node_modules/classnames/index.js"></script>
 
-						<li class="editing">
-							<div class="view">
-								<input
-								class="toggle"
-								type="checkbox"
-								checked="true"
-								>
-								<label>Editing Item</label>
-								<button class="destroy"></button>
-							</div>
-							<input class="edit" value="Editing Item">
-						</li>
-
-
-						<li class="">
-							<div class="view">
-								<input class="toggle" type="checkbox" checked="true">
-								<label>Uncompleted Item</label>
-								<button class="destroy"></button>
-							</div>
-							<input class="edit" value="">
-						</li>
-					</ul>
-				</section>
-
-				<footer id="footer">
-					<span id="todo-count">
-						<strong>2</strong> items left
-					</span>
-					<ul id="filters">
-						<li>
-							<a href="#/" class="selected">All</a>
-						</li>
-						<li>
-							<a href="#/active" class="">Active</a>
-						</li>
-						<li>
-							<a href="#/completed" class="">Completed</a>
-						</li>
-
-					</ul>
-					<button id="clear-completed" >Clear completed</button>
-				</footer>
-
-			</div>
-
-
-		</section>
-		<footer id="info">
-			<p>Double-click to edit a todo</p>
-			<p>Created by <a href="http://github.com/petehunt/">petehunt</a></p>
-			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
-		</footer>
-
-		<script src="node_modules/todomvc-common/base.js"></script>
-		<script src="node_modules/react/dist/react-with-addons.js"></script>
-		<script src="node_modules/react/dist/JSXTransformer.js"></script>
-		<script src="node_modules/director/build/director.js"></script>
+          <script src="js/utils.js"></script>
+          <script src="js/app.jsx" type="text/jsx"></script>
 	</body>
 </html>
